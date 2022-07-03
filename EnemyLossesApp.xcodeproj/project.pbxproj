@@ -13,8 +13,8 @@
 		896343FB2871F3F400ACB482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343F92871F3F400ACB482 /* Main.storyboard */; };
 		896343FD2871F3F700ACB482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896343FC2871F3F700ACB482 /* Assets.xcassets */; };
 		896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */; };
-		8963440F2871F51700ACB482 /* russia_losses_equipment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8963440D2871F51600ACB482 /* russia_losses_equipment.txt */; };
-		896344102871F51700ACB482 /* russia_losses_personnel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8963440E2871F51600ACB482 /* russia_losses_personnel.txt */; };
+		89D9E6962871FE1F001884A4 /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */; };
+		89D9E6972871FE1F001884A4 /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		896343FC2871F3F700ACB482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896343FF2871F3F700ACB482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896344012871F3F700ACB482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8963440D2871F51600ACB482 /* russia_losses_equipment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = russia_losses_equipment.txt; path = ../../../russia_losses_equipment.txt; sourceTree = "<group>"; };
-		8963440E2871F51600ACB482 /* russia_losses_personnel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = russia_losses_personnel.txt; path = ../../../russia_losses_personnel.txt; sourceTree = "<group>"; };
+		89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_equipment.json; path = ../../../russia_losses_equipment.json; sourceTree = "<group>"; };
+		89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_personnel.json; path = ../../../russia_losses_personnel.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 		8963440C2871F47800ACB482 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8963440D2871F51600ACB482 /* russia_losses_equipment.txt */,
-				8963440E2871F51600ACB482 /* russia_losses_personnel.txt */,
+				89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */,
+				89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -179,11 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896344102871F51700ACB482 /* russia_losses_personnel.txt in Resources */,
 				896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */,
 				896343FD2871F3F700ACB482 /* Assets.xcassets in Resources */,
+				89D9E6962871FE1F001884A4 /* russia_losses_equipment.json in Resources */,
+				89D9E6972871FE1F001884A4 /* russia_losses_personnel.json in Resources */,
 				896343FB2871F3F400ACB482 /* Main.storyboard in Resources */,
-				8963440F2871F51700ACB482 /* russia_losses_equipment.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
