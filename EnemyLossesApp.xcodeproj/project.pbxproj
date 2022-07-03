@@ -15,6 +15,8 @@
 		896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */; };
 		89D9E6962871FE1F001884A4 /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */; };
 		89D9E6972871FE1F001884A4 /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */; };
+		89D9E6992871FEDE001884A4 /* EquipmentLoosesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */; };
+		89D9E69B2871FEF6001884A4 /* PersonnelLoosesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		896344012871F3F700ACB482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_equipment.json; path = ../../../russia_losses_equipment.json; sourceTree = "<group>"; };
 		89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_personnel.json; path = ../../../russia_losses_personnel.json; sourceTree = "<group>"; };
+		89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLoosesDto.swift; sourceTree = "<group>"; };
+		89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLoosesDto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		8963440A2871F44100ACB482 /* Dtos */ = {
 			isa = PBXGroup;
 			children = (
+				89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */,
+				89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */,
 			);
 			path = Dtos;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D9E69B2871FEF6001884A4 /* PersonnelLoosesDto.swift in Sources */,
 				896343F82871F3F400ACB482 /* ViewController.swift in Sources */,
 				896343F42871F3F400ACB482 /* AppDelegate.swift in Sources */,
 				896343F62871F3F400ACB482 /* SceneDelegate.swift in Sources */,
+				89D9E6992871FEDE001884A4 /* EquipmentLoosesDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
