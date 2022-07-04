@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct PersonnelLoosesDto: Decodable {
+struct PersonnelLossesDto: Decodable {
     
     let date: String
     let day: Int
@@ -19,7 +19,7 @@ struct PersonnelLoosesDto: Decodable {
     
     
     
-    init(from decoder: Decoder) throws {
+  init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.date = try values.decode(String.self, forKey: .date)
         self.day = try values.decode(Int.self, forKey: .day)

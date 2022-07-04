@@ -15,8 +15,15 @@
 		896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */; };
 		89D9E6962871FE1F001884A4 /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */; };
 		89D9E6972871FE1F001884A4 /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */; };
-		89D9E6992871FEDE001884A4 /* EquipmentLoosesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */; };
-		89D9E69B2871FEF6001884A4 /* PersonnelLoosesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */; };
+		89D9E6992871FEDE001884A4 /* EquipmentLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */; };
+		89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */; };
+		89D9E69D2873142C001884A4 /* EquipmentLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69C2873142C001884A4 /* EquipmentLosses.swift */; };
+		89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A1287314C5001884A4 /* FileOperationsController.swift */; };
+		89D9E6A42873150B001884A4 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A32873150B001884A4 /* Consts.swift */; };
+		89D9E6A8287341AF001884A4 /* DateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A7287341AF001884A4 /* DateTableViewController.swift */; };
+		89D9E6AA28734236001884A4 /* TwoButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */; };
+		89D9E6AC2873426B001884A4 /* PersonnelDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */; };
+		89D9E6AE287342E1001884A4 /* EquipmentDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +37,15 @@
 		896344012871F3F700ACB482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D9E6942871FE1F001884A4 /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_equipment.json; path = ../../../russia_losses_equipment.json; sourceTree = "<group>"; };
 		89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_personnel.json; path = ../../../russia_losses_personnel.json; sourceTree = "<group>"; };
-		89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLoosesDto.swift; sourceTree = "<group>"; };
-		89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLoosesDto.swift; sourceTree = "<group>"; };
+		89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLossesDto.swift; sourceTree = "<group>"; };
+		89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLossesDto.swift; sourceTree = "<group>"; };
+		89D9E69C2873142C001884A4 /* EquipmentLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLosses.swift; sourceTree = "<group>"; };
+		89D9E6A1287314C5001884A4 /* FileOperationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationsController.swift; sourceTree = "<group>"; };
+		89D9E6A32873150B001884A4 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		89D9E6A7287341AF001884A4 /* DateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewController.swift; sourceTree = "<group>"; };
+		89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonsViewController.swift; sourceTree = "<group>"; };
+		89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelDetailedViewController.swift; sourceTree = "<group>"; };
+		89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +78,9 @@
 		896343F22871F3F400ACB482 /* EnemyLossesApp */ = {
 			isa = PBXGroup;
 			children = (
+				89D9E69E28731487001884A4 /* Utitlities */,
 				8963440C2871F47800ACB482 /* Data */,
 				8963440B2871F45800ACB482 /* App */,
-				8963440A2871F44100ACB482 /* Dtos */,
 				896344092871F42D00ACB482 /* Models */,
 				896344082871F41A00ACB482 /* Controllers */,
 				896344072871F40B00ACB482 /* Views */,
@@ -79,8 +93,8 @@
 		896344072871F40B00ACB482 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */,
-				896343F92871F3F400ACB482 /* Main.storyboard */,
+				89D9E6A62873417A001884A4 /* ViewControllers */,
+				89D9E6A52873411B001884A4 /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +102,7 @@
 		896344082871F41A00ACB482 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				89D9E6A1287314C5001884A4 /* FileOperationsController.swift */,
 				896343F72871F3F400ACB482 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -96,6 +111,8 @@
 		896344092871F42D00ACB482 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8963440A2871F44100ACB482 /* Dtos */,
+				89D9E69C2873142C001884A4 /* EquipmentLosses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,8 +120,8 @@
 		8963440A2871F44100ACB482 /* Dtos */ = {
 			isa = PBXGroup;
 			children = (
-				89D9E6982871FEDE001884A4 /* EquipmentLoosesDto.swift */,
-				89D9E69A2871FEF6001884A4 /* PersonnelLoosesDto.swift */,
+				89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */,
+				89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */,
 			);
 			path = Dtos;
 			sourceTree = "<group>";
@@ -125,6 +142,34 @@
 				89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		89D9E69E28731487001884A4 /* Utitlities */ = {
+			isa = PBXGroup;
+			children = (
+				89D9E6A32873150B001884A4 /* Consts.swift */,
+			);
+			path = Utitlities;
+			sourceTree = "<group>";
+		};
+		89D9E6A52873411B001884A4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				896343F92871F3F400ACB482 /* Main.storyboard */,
+				896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		89D9E6A62873417A001884A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89D9E6A7287341AF001884A4 /* DateTableViewController.swift */,
+				89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */,
+				89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */,
+				89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D9E69B2871FEF6001884A4 /* PersonnelLoosesDto.swift in Sources */,
+				89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */,
+				89D9E6A42873150B001884A4 /* Consts.swift in Sources */,
+				89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */,
+				89D9E69D2873142C001884A4 /* EquipmentLosses.swift in Sources */,
+				89D9E6A8287341AF001884A4 /* DateTableViewController.swift in Sources */,
 				896343F82871F3F400ACB482 /* ViewController.swift in Sources */,
 				896343F42871F3F400ACB482 /* AppDelegate.swift in Sources */,
+				89D9E6AA28734236001884A4 /* TwoButtonsViewController.swift in Sources */,
 				896343F62871F3F400ACB482 /* SceneDelegate.swift in Sources */,
-				89D9E6992871FEDE001884A4 /* EquipmentLoosesDto.swift in Sources */,
+				89D9E6AC2873426B001884A4 /* PersonnelDetailedViewController.swift in Sources */,
+				89D9E6992871FEDE001884A4 /* EquipmentLossesDto.swift in Sources */,
+				89D9E6AE287342E1001884A4 /* EquipmentDetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
