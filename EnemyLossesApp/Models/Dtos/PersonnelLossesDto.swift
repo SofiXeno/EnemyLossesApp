@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct PersonnelLossesDto: Decodable {
+struct PersonnelLossesDto: Decodable, Equatable {
     
     let date: String
     let day: Int

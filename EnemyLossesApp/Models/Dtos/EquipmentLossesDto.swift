@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct EquipmentLossesDto : Decodable {
+struct EquipmentLossesDto : Decodable, Equatable  {
     
     let date: String
     let day: Int
@@ -61,6 +61,12 @@ struct EquipmentLossesDto : Decodable {
           case navalShip = "naval ship"
           case antiAircraftWarfare = "anti-aircraft warfare"
       }
+    
+    public static func ==(lhs: EquipmentLossesDto, rhl: PersonnelLossesDto) -> Bool {
+        
+      lhs.day == rhl.day
+        
+    }
     
     
     

@@ -17,13 +17,13 @@
 		89D9E6972871FE1F001884A4 /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */; };
 		89D9E6992871FEDE001884A4 /* EquipmentLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */; };
 		89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */; };
-		89D9E69D2873142C001884A4 /* EquipmentLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69C2873142C001884A4 /* EquipmentLosses.swift */; };
+		89D9E69D2873142C001884A4 /* MergedLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69C2873142C001884A4 /* MergedLosses.swift */; };
 		89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A1287314C5001884A4 /* FileOperationsController.swift */; };
-		89D9E6A42873150B001884A4 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A32873150B001884A4 /* Consts.swift */; };
-		89D9E6A8287341AF001884A4 /* DateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A7287341AF001884A4 /* DateTableViewController.swift */; };
-		89D9E6AA28734236001884A4 /* TwoButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */; };
-		89D9E6AC2873426B001884A4 /* PersonnelDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */; };
-		89D9E6AE287342E1001884A4 /* EquipmentDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */; };
+		89D9E6A42873150B001884A4 /* DataRepositorySingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A32873150B001884A4 /* DataRepositorySingleton.swift */; };
+		89D9E6A8287341AF001884A4 /* DateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A7287341AF001884A4 /* DateListTableViewController.swift */; };
+		89D9E6B02875C1A0001884A4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AF2875C1A0001884A4 /* Utilities.swift */; };
+		89D9E6B32875D826001884A4 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6B22875D826001884A4 /* DateTableViewCell.swift */; };
+		89D9E6B52875F591001884A4 /* DetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6B42875F591001884A4 /* DetailedInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +39,13 @@
 		89D9E6952871FE1F001884A4 /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_personnel.json; path = ../../../russia_losses_personnel.json; sourceTree = "<group>"; };
 		89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLossesDto.swift; sourceTree = "<group>"; };
 		89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLossesDto.swift; sourceTree = "<group>"; };
-		89D9E69C2873142C001884A4 /* EquipmentLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLosses.swift; sourceTree = "<group>"; };
+		89D9E69C2873142C001884A4 /* MergedLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedLosses.swift; sourceTree = "<group>"; };
 		89D9E6A1287314C5001884A4 /* FileOperationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationsController.swift; sourceTree = "<group>"; };
-		89D9E6A32873150B001884A4 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
-		89D9E6A7287341AF001884A4 /* DateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewController.swift; sourceTree = "<group>"; };
-		89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonsViewController.swift; sourceTree = "<group>"; };
-		89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelDetailedViewController.swift; sourceTree = "<group>"; };
-		89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailedViewController.swift; sourceTree = "<group>"; };
+		89D9E6A32873150B001884A4 /* DataRepositorySingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositorySingleton.swift; sourceTree = "<group>"; };
+		89D9E6A7287341AF001884A4 /* DateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListTableViewController.swift; sourceTree = "<group>"; };
+		89D9E6AF2875C1A0001884A4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		89D9E6B22875D826001884A4 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		89D9E6B42875F591001884A4 /* DetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,7 @@
 		896343F22871F3F400ACB482 /* EnemyLossesApp */ = {
 			isa = PBXGroup;
 			children = (
+				89D9E6B12875D434001884A4 /* Repositories */,
 				89D9E69E28731487001884A4 /* Utitlities */,
 				8963440C2871F47800ACB482 /* Data */,
 				8963440B2871F45800ACB482 /* App */,
@@ -112,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8963440A2871F44100ACB482 /* Dtos */,
-				89D9E69C2873142C001884A4 /* EquipmentLosses.swift */,
+				89D9E69C2873142C001884A4 /* MergedLosses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,7 +148,7 @@
 		89D9E69E28731487001884A4 /* Utitlities */ = {
 			isa = PBXGroup;
 			children = (
-				89D9E6A32873150B001884A4 /* Consts.swift */,
+				89D9E6AF2875C1A0001884A4 /* Utilities.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -164,12 +165,19 @@
 		89D9E6A62873417A001884A4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				89D9E6A7287341AF001884A4 /* DateTableViewController.swift */,
-				89D9E6A928734236001884A4 /* TwoButtonsViewController.swift */,
-				89D9E6AB2873426B001884A4 /* PersonnelDetailedViewController.swift */,
-				89D9E6AD287342E1001884A4 /* EquipmentDetailedViewController.swift */,
+				89D9E6A7287341AF001884A4 /* DateListTableViewController.swift */,
+				89D9E6B22875D826001884A4 /* DateTableViewCell.swift */,
+				89D9E6B42875F591001884A4 /* DetailedInfoViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		89D9E6B12875D434001884A4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				89D9E6A32873150B001884A4 /* DataRepositorySingleton.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,17 +254,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */,
-				89D9E6A42873150B001884A4 /* Consts.swift in Sources */,
+				89D9E6A42873150B001884A4 /* DataRepositorySingleton.swift in Sources */,
 				89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */,
-				89D9E69D2873142C001884A4 /* EquipmentLosses.swift in Sources */,
-				89D9E6A8287341AF001884A4 /* DateTableViewController.swift in Sources */,
+				89D9E69D2873142C001884A4 /* MergedLosses.swift in Sources */,
+				89D9E6B02875C1A0001884A4 /* Utilities.swift in Sources */,
+				89D9E6B52875F591001884A4 /* DetailedInfoViewController.swift in Sources */,
+				89D9E6A8287341AF001884A4 /* DateListTableViewController.swift in Sources */,
 				896343F82871F3F400ACB482 /* ViewController.swift in Sources */,
+				89D9E6B32875D826001884A4 /* DateTableViewCell.swift in Sources */,
 				896343F42871F3F400ACB482 /* AppDelegate.swift in Sources */,
-				89D9E6AA28734236001884A4 /* TwoButtonsViewController.swift in Sources */,
 				896343F62871F3F400ACB482 /* SceneDelegate.swift in Sources */,
-				89D9E6AC2873426B001884A4 /* PersonnelDetailedViewController.swift in Sources */,
 				89D9E6992871FEDE001884A4 /* EquipmentLossesDto.swift in Sources */,
-				89D9E6AE287342E1001884A4 /* EquipmentDetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
