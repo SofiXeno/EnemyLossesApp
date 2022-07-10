@@ -9,36 +9,17 @@ import UIKit
 
 class DateTableViewCell: UITableViewCell {
 
-    
-    
-    
     // MARK: - IBOutlets
-    
+
     @IBOutlet private weak var dayNumb: UILabel!
-    
+
     @IBOutlet private weak var date: UILabel!
-    
-    
-    
-    
-    // MARK: - Properties
-    var previousDayEquipmentLooses : EquipmentLossesDto?
-    var previousDayPersonnelLooses : PersonnelLossesDto?
-    
-    var currentDayEquipmentLooses : EquipmentLossesDto?
-    var currentDayPersonnelLooses : PersonnelLossesDto?
-    
-    
-    
+
     // MARK: - Lifecycle
-    func config(from array: PersonnelLossesDto){
-        self.dayNumb.text = String(array.day)
-        self.date.text = array.date
-        
-        
-        
-        
+    func config(from dto: PersonnelLossesDto) {
+        self.dayNumb.text = String(dto.day)
+        self.date.text = dto.date
+
     }
-    
- 
+
 }

@@ -37,23 +37,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-8u-Mep">
-                                            <rect key="frame" x="20" y="22" width="42" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                            <rect key="frame" x="20" y="21.5" width="42" height="27"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <color key="textColor" name="Accent2"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" name="UA-Y"/>
-                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-CD-vbn">
-                                            <rect key="frame" x="70" y="22" width="62" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                            <rect key="frame" x="70" y="21.5" width="62" height="27"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <color key="textColor" name="Accent2"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" name="UA-B"/>
-                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgz-JS-zrq">
-                                            <rect key="frame" x="202" y="21.5" width="131" height="27"/>
+                                            <rect key="frame" x="263" y="21.5" width="131" height="27"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                             <color key="textColor" name="Accent1-1"/>
                                             <nil key="highlightedColor"/>
@@ -62,10 +62,10 @@
                                     <constraints>
                                         <constraint firstItem="Xgz-JS-zrq" firstAttribute="width" secondItem="vYc-J5-WCf" secondAttribute="width" multiplier="0.316425" id="1hX-yH-cEe"/>
                                         <constraint firstItem="Xgz-JS-zrq" firstAttribute="centerY" secondItem="vYc-J5-WCf" secondAttribute="centerY" id="3zU-Ep-end"/>
-                                        <constraint firstItem="Xgz-JS-zrq" firstAttribute="leading" secondItem="Rmi-CD-vbn" secondAttribute="trailing" constant="70" id="5vI-kh-4JJ"/>
                                         <constraint firstItem="Rmi-CD-vbn" firstAttribute="width" secondItem="vYc-J5-WCf" secondAttribute="width" multiplier="0.149758" id="7xy-ch-efj"/>
                                         <constraint firstItem="Rmi-CD-vbn" firstAttribute="leading" secondItem="Qdd-8u-Mep" secondAttribute="trailing" constant="8" id="SA3-Ha-ftP"/>
                                         <constraint firstItem="Xgz-JS-zrq" firstAttribute="height" secondItem="vYc-J5-WCf" secondAttribute="height" multiplier="0.385714" id="esO-C0-Dk3"/>
+                                        <constraint firstItem="Xgz-JS-zrq" firstAttribute="trailing" secondItem="vYc-J5-WCf" secondAttribute="trailingMargin" id="fhj-9I-x8f"/>
                                         <constraint firstItem="Qdd-8u-Mep" firstAttribute="leading" secondItem="vYc-J5-WCf" secondAttribute="leadingMargin" id="kOW-hq-yN1"/>
                                         <constraint firstItem="Xgz-JS-zrq" firstAttribute="baseline" secondItem="Rmi-CD-vbn" secondAttribute="baseline" id="nbi-QC-vU6"/>
                                         <constraint firstItem="Qdd-8u-Mep" firstAttribute="height" secondItem="vYc-J5-WCf" secondAttribute="height" multiplier="0.385714" id="oBZ-9Z-dyZ"/>
@@ -90,7 +90,7 @@
                     <connections>
                         <outlet property="dateListTable" destination="p8q-qr-ReS" id="D9r-B1-y0v"/>
                         <outlet property="searchBar" destination="fkN-wj-gyE" id="hYt-AQ-dZc"/>
-                        <segue destination="aU0-1c-OOy" kind="show" id="itK-LX-307"/>
+                        <segue destination="aU0-1c-OOy" kind="show" identifier="detailed_segue" id="itK-LX-307"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nJ-Oj-4X5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,85 +105,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faE-QO-GRf">
-                                <rect key="frame" x="117.5" y="131" width="62.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
-                                <color key="textColor" name="Accent2"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" name="UA-B"/>
-                                <size key="shadowOffset" width="-1" height="-1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjA-fG-v9U">
-                                <rect key="frame" x="67" y="131" width="42.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
-                                <color key="textColor" name="Accent2"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" name="UA-Y"/>
-                                <size key="shadowOffset" width="-1" height="-1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odF-bk-6g1">
-                                <rect key="frame" x="209" y="131.5" width="131" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <color key="textColor" name="Accent1-1"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tm-mp-X5G">
-                                <rect key="frame" x="0.0" y="269" width="414" height="510"/>
+                                <rect key="frame" x="0.0" y="251" width="414" height="617"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-Rc-YWj">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-Rc-YWj">
                                         <rect key="frame" x="113" y="23" width="188.5" height="56"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="J9c-lQ-Vk1">
-                                                <rect key="frame" x="0.0" y="0.0" width="188.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="188.5" height="23"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personnel : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJm-JU-oFz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personnel : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJm-JU-oFz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGM-Wh-FKC">
-                                                        <rect key="frame" x="108" y="0.0" width="80.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGM-Wh-FKC">
+                                                        <rect key="frame" x="98.5" y="0.0" width="90" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pyE-KZ-d1L">
-                                                <rect key="frame" x="0.0" y="35.5" width="188.5" height="20.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyE-KZ-d1L">
+                                                <rect key="frame" x="0.0" y="38" width="188.5" height="18"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prisoner of War :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-0R-g7E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Prisoner of War :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-0R-g7E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sns-bv-agU">
-                                                        <rect key="frame" x="147" y="0.0" width="41.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sns-bv-agU">
+                                                        <rect key="frame" x="136" y="0.0" width="52.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="TLa-0R-g7E" firstAttribute="baseline" secondItem="sns-bv-agU" secondAttribute="firstBaseline" id="qR1-uE-O9f"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mDT-2V-pHb">
-                                        <rect key="frame" x="68" y="67.5" width="278.5" height="375.5"/>
+                                        <rect key="frame" x="68" y="50" width="278.5" height="517.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kzN-9K-R8j">
                                                 <rect key="frame" x="0.0" y="0.0" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Aircraft : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8s-qA-af8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Aircraft : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8s-qA-af8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="226" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phW-Xt-BCf">
-                                                        <rect key="frame" x="237" y="0.0" width="41.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phW-Xt-BCf">
+                                                        <rect key="frame" x="241" y="0.0" width="37.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -192,15 +173,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hoa-To-niO">
                                                 <rect key="frame" x="0.0" y="35.5" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helicopter :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPt-Rm-PAl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helicopter :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPt-Rm-PAl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS2-1x-aKB">
-                                                        <rect key="frame" x="107.5" y="0.0" width="171" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS2-1x-aKB">
+                                                        <rect key="frame" x="98" y="0.0" width="180.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -209,15 +190,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hF7-Bd-T64">
                                                 <rect key="frame" x="0.0" y="71" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tank :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-ZD-Xkh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tank :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-ZD-Xkh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBB-hh-KyF">
-                                                        <rect key="frame" x="62" y="0.0" width="216.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBB-hh-KyF">
+                                                        <rect key="frame" x="57.5" y="0.0" width="221" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -226,15 +207,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-9W-EDU">
                                                 <rect key="frame" x="0.0" y="106.5" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armored Personnel Carrier :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjD-TS-aML">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Armored Personnel Carrier :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjD-TS-aML">
+                                                        <rect key="frame" x="0.0" y="0.0" width="226" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS4-Vm-8Dm">
-                                                        <rect key="frame" x="237" y="0.0" width="41.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS4-Vm-8Dm">
+                                                        <rect key="frame" x="241" y="0.0" width="37.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -243,15 +224,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NCm-u3-QUd">
                                                 <rect key="frame" x="0.0" y="142" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field artillery :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTT-h4-8wA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field artillery :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTT-h4-8wA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DV-wd-MR9">
-                                                        <rect key="frame" x="128" y="0.0" width="150.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DV-wd-MR9">
+                                                        <rect key="frame" x="117" y="0.0" width="161.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -260,15 +241,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AKv-tq-GEq">
                                                 <rect key="frame" x="0.0" y="177.5" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Multiple Rocket Launcher :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD6-ph-QRy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Multiple Rocket Launcher :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD6-ph-QRy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="226" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-6i-l3i">
-                                                        <rect key="frame" x="237" y="0.0" width="41.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-6i-l3i">
+                                                        <rect key="frame" x="241" y="0.0" width="37.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -277,15 +258,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MIS-gP-Xgy">
                                                 <rect key="frame" x="0.0" y="213" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miilitary auto :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oua-Pc-u98">
-                                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miilitary auto :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oua-Pc-u98">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ael-FF-sfh">
-                                                        <rect key="frame" x="127.5" y="0.0" width="151" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ael-FF-sfh">
+                                                        <rect key="frame" x="116.5" y="0.0" width="162" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -294,15 +275,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bqX-WW-S1Q">
                                                 <rect key="frame" x="0.0" y="248.5" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel tank :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-k8-eL5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel tank :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-k8-eL5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H7-AJ-PRk">
-                                                        <rect key="frame" x="97" y="0.0" width="181.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H7-AJ-PRk">
+                                                        <rect key="frame" x="89" y="0.0" width="189.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -311,15 +292,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="089-c8-0GG">
                                                 <rect key="frame" x="0.0" y="284" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2n-oK-9aA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2n-oK-9aA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaC-7J-QtF">
-                                                        <rect key="frame" x="72.5" y="0.0" width="206" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaC-7J-QtF">
+                                                        <rect key="frame" x="67" y="0.0" width="211.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -328,15 +309,15 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hFZ-Pi-8Im">
                                                 <rect key="frame" x="0.0" y="319.5" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naval ship :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdC-Vg-GXp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naval ship :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdC-Vg-GXp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nm-Ce-Bzh">
-                                                        <rect key="frame" x="106" y="0.0" width="172.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nm-Ce-Bzh">
+                                                        <rect key="frame" x="97.5" y="0.0" width="181" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -345,15 +326,83 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZC4-6T-rcz">
                                                 <rect key="frame" x="0.0" y="355" width="278.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-aircraft warfare :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTG-cm-eRN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-aircraft warfare :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTG-cm-eRN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" name="Accent2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgp-WL-BTF">
-                                                        <rect key="frame" x="187" y="0.0" width="91.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgp-WL-BTF">
+                                                        <rect key="frame" x="170.5" y="0.0" width="108" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="Accent1-1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8z9-Un-Aji">
+                                                <rect key="frame" x="0.0" y="390.5" width="278.5" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special equipment :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-xR-qQU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <color key="textColor" name="Accent2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNr-g0-sMc">
+                                                        <rect key="frame" x="156.5" y="0.0" width="122" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="Accent1-1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qut-hs-VTz">
+                                                <rect key="frame" x="0.0" y="426" width="278.5" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile SRBM system : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svV-8b-9Py">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <color key="textColor" name="Accent2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f52-b2-663">
+                                                        <rect key="frame" x="177" y="0.0" width="101.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="Accent1-1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pHV-Yn-RAt">
+                                                <rect key="frame" x="0.0" y="461.5" width="278.5" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles and fuel tanks :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyJ-4c-ZPI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <color key="textColor" name="Accent2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeP-0K-69v">
+                                                        <rect key="frame" x="188" y="0.0" width="90.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="Accent1-1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qrK-rc-ZBD">
+                                                <rect key="frame" x="0.0" y="497" width="278.5" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cruise missiles :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-Ko-FsL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <color key="textColor" name="Accent2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpI-kU-hkp">
+                                                        <rect key="frame" x="131.5" y="0.0" width="147" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="Accent1-1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -364,98 +413,138 @@
                                 </subviews>
                                 <color key="backgroundColor" name="MilitaryColor"/>
                                 <constraints>
-                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="height" secondItem="9tm-mp-X5G" secondAttribute="height" multiplier="0.109804" id="E6g-Ta-mea"/>
-                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="centerX" secondItem="9tm-mp-X5G" secondAttribute="centerX" id="G7v-95-odT"/>
-                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="top" secondItem="9tm-mp-X5G" secondAttribute="top" constant="23" id="N2B-ig-rEQ"/>
-                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="width" secondItem="9tm-mp-X5G" secondAttribute="width" multiplier="0.672705" id="XSf-Di-i6C"/>
-                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="centerY" secondItem="9tm-mp-X5G" secondAttribute="centerY" id="Yjz-dd-dN8"/>
-                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="centerX" secondItem="9tm-mp-X5G" secondAttribute="centerX" id="cxB-j2-v9K"/>
-                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="height" secondItem="9tm-mp-X5G" secondAttribute="height" multiplier="0.736275" id="lQE-tG-JrZ"/>
-                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="width" secondItem="9tm-mp-X5G" secondAttribute="width" multiplier="0.455314" id="v7B-S7-u7B"/>
-                                    <constraint firstItem="a8s-qA-af8" firstAttribute="top" secondItem="9tm-mp-X5G" secondAttribute="top" constant="67.5" id="zWu-lp-PA3"/>
+                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="height" secondItem="9tm-mp-X5G" secondAttribute="height" multiplier="0.838736" id="1xy-pM-1oc"/>
+                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="top" secondItem="9tm-mp-X5G" secondAttribute="top" constant="23" id="37P-ew-lMp"/>
+                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="centerY" secondItem="9tm-mp-X5G" secondAttribute="centerY" id="Fyg-ms-MfN"/>
+                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="height" secondItem="9tm-mp-X5G" secondAttribute="height" multiplier="0.0907618" id="GKV-TQ-0qH"/>
+                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="centerX" secondItem="9tm-mp-X5G" secondAttribute="centerX" id="ICr-My-UBF"/>
+                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="width" secondItem="9tm-mp-X5G" secondAttribute="width" multiplier="0.672705" id="Kye-OB-2lY"/>
+                                    <constraint firstItem="mDT-2V-pHb" firstAttribute="centerX" secondItem="9tm-mp-X5G" secondAttribute="centerX" id="STQ-Li-3bO"/>
+                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="width" secondItem="9tm-mp-X5G" secondAttribute="width" multiplier="0.455314" id="ltY-wN-6uG"/>
+                                    <constraint firstItem="f4r-Rc-YWj" firstAttribute="centerX" secondItem="mDT-2V-pHb" secondAttribute="centerX" id="mMw-7w-xga"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-cC-QQF">
-                                <rect key="frame" x="73.5" y="205.5" width="267" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-p5-h4k">
+                                <rect key="frame" x="222" y="194" width="130" height="36"/>
+                                <color key="backgroundColor" name="Accent1"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="tintColor" name="PIXEL"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Personnel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPersonnelLosses:" destination="aU0-1c-OOy" eventType="touchUpInside" id="xoN-XO-TDb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9V-he-eJf">
+                                <rect key="frame" x="62" y="194" width="130" height="36"/>
+                                <color key="backgroundColor" name="Accent1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="FcC-FR-YLo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="tintColor" name="PIXEL"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Equipment">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showEquipmentLosses:" destination="aU0-1c-OOy" eventType="touchUpInside" id="dW4-pU-vqb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-P1-gKm">
+                                <rect key="frame" x="90" y="121" width="234.5" height="26.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-p5-h4k">
-                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="38"/>
-                                        <color key="tintColor" name="PIXEL"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Personnel" titleAlignment="leading">
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" name="Accent1"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="showPersonnelLosses:" destination="aU0-1c-OOy" eventType="touchUpInside" id="xoN-XO-TDb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9V-he-eJf">
-                                        <rect key="frame" x="143.5" y="0.0" width="123.5" height="38"/>
-                                        <color key="tintColor" name="PIXEL"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Equipment">
-                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" name="Accent1"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="showEquipmentLosses:" destination="aU0-1c-OOy" eventType="touchUpInside" id="dW4-pU-vqb"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjA-fG-v9U">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" name="Accent2"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="UA-Y"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" n : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faE-QO-GRf">
+                                        <rect key="frame" x="55" y="0.0" width="33.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" name="Accent2"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="UA-B"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odF-bk-6g1">
+                                        <rect key="frame" x="103.5" y="0.0" width="131" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" name="Accent1-1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qaK-uQ-cAL"/>
                         <color key="backgroundColor" name="MilitaryColor"/>
                         <constraints>
-                            <constraint firstItem="vjA-fG-v9U" firstAttribute="leading" secondItem="qaK-uQ-cAL" secondAttribute="leading" constant="67" id="1hK-Kb-JF5"/>
-                            <constraint firstItem="9tm-mp-X5G" firstAttribute="centerX" secondItem="qaK-uQ-cAL" secondAttribute="centerX" id="8LT-gb-yLx"/>
-                            <constraint firstItem="odF-bk-6g1" firstAttribute="firstBaseline" secondItem="faE-QO-GRf" secondAttribute="firstBaseline" id="8uK-T0-XZH"/>
-                            <constraint firstItem="9tm-mp-X5G" firstAttribute="height" secondItem="dnY-aC-z4a" secondAttribute="height" multiplier="0.569196" id="AVc-M9-QYc"/>
-                            <constraint firstItem="vjA-fG-v9U" firstAttribute="baseline" secondItem="faE-QO-GRf" secondAttribute="baseline" id="N0W-9N-ORc"/>
-                            <constraint firstItem="qaK-uQ-cAL" firstAttribute="bottom" secondItem="9tm-mp-X5G" secondAttribute="bottom" constant="83" id="W7D-JL-Teg"/>
-                            <constraint firstItem="kC1-cC-QQF" firstAttribute="centerX" secondItem="qaK-uQ-cAL" secondAttribute="centerX" id="YRP-Xc-eQL"/>
-                            <constraint firstItem="odF-bk-6g1" firstAttribute="height" secondItem="faE-QO-GRf" secondAttribute="height" id="bPX-VN-Rul"/>
-                            <constraint firstItem="faE-QO-GRf" firstAttribute="height" secondItem="vjA-fG-v9U" secondAttribute="height" id="kuS-Fh-ZxY"/>
-                            <constraint firstItem="9tm-mp-X5G" firstAttribute="centerX" secondItem="kC1-cC-QQF" secondAttribute="centerX" id="oNU-Fq-VxP"/>
-                            <constraint firstItem="kC1-cC-QQF" firstAttribute="top" secondItem="vjA-fG-v9U" secondAttribute="bottom" constant="47" id="qtX-mH-gJb"/>
-                            <constraint firstItem="faE-QO-GRf" firstAttribute="leading" secondItem="vjA-fG-v9U" secondAttribute="trailing" constant="8" id="uEg-1J-IA3"/>
-                            <constraint firstItem="odF-bk-6g1" firstAttribute="leading" secondItem="faE-QO-GRf" secondAttribute="trailing" constant="29" id="vNT-pC-D9v"/>
-                            <constraint firstItem="9tm-mp-X5G" firstAttribute="width" secondItem="dnY-aC-z4a" secondAttribute="width" id="vug-2R-DK9"/>
-                            <constraint firstItem="vjA-fG-v9U" firstAttribute="top" secondItem="qaK-uQ-cAL" secondAttribute="top" constant="43" id="ztB-57-eCv"/>
+                            <constraint firstItem="9tm-mp-X5G" firstAttribute="width" secondItem="dnY-aC-z4a" secondAttribute="width" id="1Fx-kg-Uxa"/>
+                            <constraint firstItem="V9V-he-eJf" firstAttribute="firstBaseline" secondItem="Sw4-p5-h4k" secondAttribute="firstBaseline" id="1UL-sF-eUk"/>
+                            <constraint firstItem="V9V-he-eJf" firstAttribute="width" secondItem="dnY-aC-z4a" secondAttribute="width" multiplier="0.31401" id="4Nf-ic-srT"/>
+                            <constraint firstItem="Gp8-P1-gKm" firstAttribute="centerX" secondItem="qaK-uQ-cAL" secondAttribute="centerX" id="5C6-fm-Lm6"/>
+                            <constraint firstItem="Sw4-p5-h4k" firstAttribute="top" secondItem="Gp8-P1-gKm" secondAttribute="bottom" constant="46.5" id="Cvx-rB-iUx"/>
+                            <constraint firstItem="Sw4-p5-h4k" firstAttribute="leading" secondItem="V9V-he-eJf" secondAttribute="trailing" constant="30" id="HuW-TH-deY"/>
+                            <constraint firstItem="V9V-he-eJf" firstAttribute="height" secondItem="Sw4-p5-h4k" secondAttribute="height" id="I8X-LG-Sj6"/>
+                            <constraint firstItem="9tm-mp-X5G" firstAttribute="height" secondItem="dnY-aC-z4a" secondAttribute="height" multiplier="0.688616" id="Ihn-79-YyN"/>
+                            <constraint firstItem="9tm-mp-X5G" firstAttribute="centerX" secondItem="qaK-uQ-cAL" secondAttribute="centerX" id="JlP-LW-K1c"/>
+                            <constraint firstItem="Gp8-P1-gKm" firstAttribute="width" secondItem="dnY-aC-z4a" secondAttribute="width" multiplier="0.566425" id="Lf2-s0-XHj"/>
+                            <constraint firstItem="V9V-he-eJf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qaK-uQ-cAL" secondAttribute="leading" symbolic="YES" id="PmZ-zg-Hfd"/>
+                            <constraint firstItem="V9V-he-eJf" firstAttribute="baseline" secondItem="Sw4-p5-h4k" secondAttribute="baseline" id="VZp-gI-Yfy"/>
+                            <constraint firstItem="Gp8-P1-gKm" firstAttribute="top" secondItem="qaK-uQ-cAL" secondAttribute="top" constant="33" id="lHb-HP-ylY"/>
+                            <constraint firstItem="9tm-mp-X5G" firstAttribute="top" secondItem="V9V-he-eJf" secondAttribute="bottom" constant="21" id="pdT-d9-o4w"/>
+                            <constraint firstItem="Sw4-p5-h4k" firstAttribute="width" secondItem="dnY-aC-z4a" secondAttribute="width" multiplier="0.31401" id="sp4-O1-USf"/>
+                            <constraint firstItem="qaK-uQ-cAL" firstAttribute="trailing" secondItem="Sw4-p5-h4k" secondAttribute="trailing" constant="62" id="szg-6W-KUD"/>
+                            <constraint firstItem="9tm-mp-X5G" firstAttribute="top" secondItem="qaK-uQ-cAL" secondAttribute="top" constant="163" id="uBY-br-pHq"/>
+                            <constraint firstItem="Gp8-P1-gKm" firstAttribute="height" secondItem="dnY-aC-z4a" secondAttribute="height" multiplier="0.0295759" id="wk0-3T-9bd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Orc Losses" id="bwc-SP-Glj"/>
                     <connections>
+                        <outlet property="aawLabel" destination="Jgp-WL-BTF" id="lVa-gK-mLx"/>
+                        <outlet property="aircraftLabel" destination="phW-Xt-BCf" id="GSZ-iy-Xo7"/>
+                        <outlet property="apcLabel" destination="hS4-Vm-8Dm" id="rgE-hT-lWf"/>
+                        <outlet property="cruiseMissilesLabel" destination="LpI-kU-hkp" id="qn5-NR-Dv6"/>
                         <outlet property="date" destination="odF-bk-6g1" id="KTF-ZX-Fa2"/>
                         <outlet property="dayNumb" destination="faE-QO-GRf" id="Iem-V9-qEz"/>
+                        <outlet property="droneLabel" destination="CaC-7J-QtF" id="hyo-LG-TF7"/>
                         <outlet property="equipmentButton" destination="V9V-he-eJf" id="fcE-S5-kVH"/>
                         <outlet property="equipmentStack" destination="mDT-2V-pHb" id="VYn-fi-jMy"/>
+                        <outlet property="fieldArtilleryLabel" destination="8DV-wd-MR9" id="H76-dM-7ED"/>
+                        <outlet property="fuelTankLabel" destination="6H7-AJ-PRk" id="f4D-4n-GPf"/>
+                        <outlet property="helicopterLabel" destination="VS2-1x-aKB" id="IK2-fx-4B9"/>
                         <outlet property="mainView" destination="9tm-mp-X5G" id="Jv4-pA-Ejt"/>
+                        <outlet property="militaryAutoLabel" destination="ael-FF-sfh" id="B6V-5S-hyQ"/>
+                        <outlet property="mrlLabel" destination="Yj0-6i-l3i" id="J6v-IC-8ef"/>
+                        <outlet property="navalShipLabel" destination="1Nm-Ce-Bzh" id="2Vo-T8-oub"/>
                         <outlet property="personnelButton" destination="Sw4-p5-h4k" id="Fj1-hP-Uj1"/>
+                        <outlet property="personnelLabel" destination="zGM-Wh-FKC" id="Gzn-Wb-kRS"/>
                         <outlet property="personnelStack" destination="f4r-Rc-YWj" id="GbG-Kd-Lx1"/>
+                        <outlet property="powLabel" destination="sns-bv-agU" id="c5C-1l-HFZ"/>
+                        <outlet property="specialEquipmentLabel" destination="JNr-g0-sMc" id="ZUl-UH-Wcb"/>
+                        <outlet property="srbmSystemLabel" destination="f52-b2-663" id="C9j-Dc-e9e"/>
+                        <outlet property="tankLabel" destination="zBB-hh-KyF" id="Gv1-hZ-gb4"/>
+                        <outlet property="vehiclesAndFuelTanksLabel" destination="IeP-0K-69v" id="tct-B4-MzW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eF9-xK-Q7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4.3478260869565224" y="547.76785714285711"/>
-        </scene>
-        <!--Personnel-->
-        <scene sceneID="hpK-Cf-rzm">
-            <objects>
-                <viewController id="ivv-Jm-bbZ" customClass="PersonnelDetailedViewController" customModule="EnemyLossesApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZBe-Iw-Klb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rxH-sD-1Hu"/>
-                        <color key="backgroundColor" name="MilitaryColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Personnel" id="Jfy-R9-WZm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n5H-Pi-GgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="806" y="548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zBQ-Z6-AF7">
@@ -470,7 +559,7 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                             <color key="textColor" name="Accent1-1"/>
-                            <color key="textShadowColor" name="Accent2"/>
+                            <color key="textShadowColor" name="PIXEL"/>
                             <offsetWrapper key="textShadowOffset" horizontal="-1" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
@@ -488,7 +577,7 @@
     </scenes>
     <resources>
         <namedColor name="Accent1">
-            <color red="0.53333333333333333" green="0.6705882352941176" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.53299999237060547" green="0.67100000381469727" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Accent1-1">
             <color red="0.76713293869400012" green="1" blue="0.3505888728268618" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -500,16 +589,16 @@
             <color red="0.53333333333333333" green="0.6705882352941176" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="MilitaryColor">
-            <color red="0.28494980931282043" green="0.32906121015548706" blue="0.08299177885055542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.28600001335144043" green="0.32899999618530273" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PIXEL">
-            <color red="0.72549019607843135" green="0.68235294117647061" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.72500002384185791" green="0.68199998140335083" blue="0.50999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UA-B">
-            <color red="0.0" green="0.3411764705882353" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.34099999070167542" blue="0.71799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UA-Y">
-            <color red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.84299999475479126" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

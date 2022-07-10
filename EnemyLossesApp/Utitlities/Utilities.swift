@@ -6,12 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
-struct Utilities{
-    
-    static func printLoosesPerDay(looses: Int) -> String{" (+\(looses))"}
-    
-    
+struct Utilities {
+
+    static func printLoosesPerDay(looses: Int) -> String {" (+\(looses))"}
+
+    static func findByDate(dto: PersonnelLossesDto, array: [EquipmentLossesDto]) -> EquipmentLossesDto {
+
+    var temp = EquipmentLossesDto()
+
+        if let dto = array.first(where: { $0.day == dto.day }) {
+            temp = dto
+        }
+
+        return temp
+    }
 
 //    static func mergeLooses(equipment: EquipmentLossesDto, personnel: PersonnelLossesDto) -> MergedLosses? {
 //        
@@ -23,5 +33,6 @@ struct Utilities{
 //        
 //        return nil
 //    }
-    
+
 }
+

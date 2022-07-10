@@ -16,13 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enemy losses       App " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPE-g7-P5S">
-                                <rect key="frame" x="6" y="247" width="403" height="126"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Launch Image" translatesAutoresizingMaskIntoConstraints="NO" id="KqW-zK-XaV">
+                                <rect key="frame" x="7" y="198" width="400" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="51"/>
-                                <color key="textColor" name="Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="MilitaryColor"/>
@@ -34,11 +31,9 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Color">
-            <color red="0.53333333333333333" green="0.6705882352941176" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <image name="Launch Image" width="860" height="1184"/>
         <namedColor name="MilitaryColor">
-            <color red="0.21176469326019287" green="0.25098040699958801" blue="0.058823525905609131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.28627452254295349" green="0.32941177487373352" blue="0.08235294371843338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

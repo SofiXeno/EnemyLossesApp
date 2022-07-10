@@ -15,22 +15,12 @@ struct PersonnelLossesDto: Decodable {
     let personnelAditional: String
     let pow: Int
 
-    init() {
-
-        self.date = ""
-        self.day = 0
-        self.personnel = 0
-        self.personnelAditional = ""
-        self.pow = 0
-
-    }
-
-  init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.date = try values.decode(String.self, forKey: .date)
         self.day = try values.decode(Int.self, forKey: .day)
         self.personnel = try values.decode(Int.self, forKey: .personnel)
-        self.personnelAditional = try values.decode(String.self, forKey: .personnelAditional)
+        self.personnel_ = try values.decode(String.self, forKey: .personnel_)
         self.pow = try values.decode(Int.self, forKey: .pow)
 
     }

@@ -7,9 +7,8 @@
 
 import Foundation
 
+class FileOperationsController {
 
-class FileOperationsController{
-    
 //    var readPersonnel: [PersonnelLossesDto] = []
 //    var readEquipment: [EquipmentLossesDto] = []
 //
@@ -17,5 +16,4 @@ class FileOperationsController{
 //
 //    private init() {}
 
-    
 }
