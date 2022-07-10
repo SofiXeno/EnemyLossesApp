@@ -12,9 +12,9 @@ class DateListTableViewController: UITableViewController {
     // MARK: - IBOutlets
     @IBOutlet private weak var dateListTable: UITableView!
 
-    @IBOutlet private weak var searchBar: UISearchBar!
-
     // MARK: Properties
+    
+    var searchController: UISearchController!
     var selectedIndex = IndexPath(row: -1, section: 0)
 
     private var previousDayEquipmentLooses = EquipmentLossesDto()
@@ -28,12 +28,33 @@ class DateListTableViewController: UITableViewController {
 
         DataRepositorySingleton.shared.writeDataToArrays()
 
+        createSearchController()
+        
         super.viewDidLoad()
 
         self.dateListTable.delegate = self
         self.dateListTable.dataSource = self
 
     }
+    
+    
+    func createSearchController(){
+        
+        
+        self.searchController = UISearchController(searchResultsController: nil)
+        
+        self.searchController.searchResultsUpdater = self
+        self.searchController.searchBar.sizeToFit()
+        self.searchController.searchBar.searchTextField.textColor = UIColor(named: "Accent3")
+        self.searchController.searchBar.barTintColor = UIColor(named: "MilitaryColor")
+        self.dateListTable.tableHeaderView = searchController.searchBar
+        
+        
+        self.searchController.definesPresentationContext = true
+        
+    }
+    
+    
 
     // MARK: Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -10,7 +10,18 @@ import UIKit
 
 struct Utilities {
 
-    static func printLoosesPerDay(looses: Int) -> String {" (+\(looses))"}
+    static func printLoosesPerDay(current: Int, currAndPrevdifference: Int) -> String {
+        
+        switch currAndPrevdifference {
+        case ...0:
+            return "\(current)"
+        default:
+            return "\(current) (+\(currAndPrevdifference))"
+        }
+        
+        
+        
+       }
 
     static func findByDate(dto: PersonnelLossesDto, array: [EquipmentLossesDto]) -> EquipmentLossesDto {
 
@@ -23,6 +34,10 @@ struct Utilities {
         return temp
     }
 
+    
+    
+    
+    
 //    static func mergeLooses(equipment: EquipmentLossesDto, personnel: PersonnelLossesDto) -> MergedLosses? {
 //        
 //        if (equipment.day == personnel.day) {
