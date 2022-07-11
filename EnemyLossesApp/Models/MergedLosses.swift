@@ -33,6 +33,41 @@ class MergedLosses: Codable {
     let vehiclesAndFuelTanks: String
     let cruiseMissiles: String
 
+    
+    // For 2 day
+    init(currentPersonnelDto: PersonnelLossesDto,
+         currentEquipmentDto: EquipmentLossesDto){
+        
+        self.date = currentPersonnelDto.date
+        self.day = currentPersonnelDto.day
+        
+        self.personnel = String(currentPersonnelDto.personnel)
+        self.personnelAditional = String(currentPersonnelDto.personnelAditional)
+        self.pow = String(currentPersonnelDto.pow)
+        
+        self.aircraft = String(currentEquipmentDto.aircraft)
+        self.helicopter = String(currentEquipmentDto.helicopter)
+        self.tank =  String(currentEquipmentDto.tank)
+        self.apc =  String(currentEquipmentDto.apc)
+        self.fieldArtillery =  String(currentEquipmentDto.fieldArtillery)
+        self.mrl =  String(currentEquipmentDto.mrl)
+        self.militaryAuto =  String(currentEquipmentDto.militaryAuto)
+        self.fuelTank =  String(currentEquipmentDto.fuelTank)
+        self.drone =  String(currentEquipmentDto.drone)
+        self.navalShip =  String(currentEquipmentDto.navalShip)
+        self.antiAircraftWarfare =  String(currentEquipmentDto.antiAircraftWarfare)
+        self.specialEquipment =  String(currentEquipmentDto.specialEquipment)
+        self.srmb =  String(currentEquipmentDto.srmb)
+        self.vehiclesAndFuelTanks =  String(currentEquipmentDto.vehiclesAndFuelTanks)
+        self.cruiseMissiles =  String(currentEquipmentDto.cruiseMissiles)
+        
+        
+    }
+    
+    
+    
+    
+    // For 3> day
     init(currentPersonnelDto: PersonnelLossesDto,
          currentEquipmentDto: EquipmentLossesDto, previousPersonnelDto: PersonnelLossesDto,
          previousEquipmentDto: EquipmentLossesDto) {

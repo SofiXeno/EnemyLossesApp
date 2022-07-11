@@ -59,10 +59,18 @@ class DateListTableViewController: UITableViewController {
     // MARK: Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! DetailedInfoViewController
-
+        
+        if (self.currentDayPersonnelLooses.day == 2){
+            destinationVC.losses = MergedLosses(currentPersonnelDto: self.currentDayPersonnelLooses, currentEquipmentDto: self.currentDayEquipmentLooses)
+            
+        }
+        
+        else{
         destinationVC.losses = MergedLosses(currentPersonnelDto: self.currentDayPersonnelLooses, currentEquipmentDto: self.currentDayEquipmentLooses, previousPersonnelDto: self.previousDayPersonnelLooses, previousEquipmentDto: self.previousDayEquipmentLooses)
+        }
+        
 
-        print("selected data   \(self.currentDayPersonnelLooses)")
+        print("selected data   \(self.currentDayEquipmentLooses)")
 
     }
 
@@ -79,27 +87,20 @@ class DateListTableViewController: UITableViewController {
 
         cell.config(from: DataRepositorySingleton.shared.personnelData[indexPath.row])
 
-        cell.selectionStyle = .default
-
          return cell
    }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let indexesToRedraw = [indexPath]
-        self.selectedIndex = indexPath
-             // Do what you need here
-        self.dateListTable.reloadRows(at: indexesToRedraw, with: .fade)
-             // go to next "page"
 
         self.currentDayPersonnelLooses = DataRepositorySingleton.shared.personnelData[indexPath.row]
-
-        if indexPath.row != 0 {
-           self.previousDayPersonnelLooses = DataRepositorySingleton.shared.personnelData[indexPath.row-1]
-
+        
         self.currentDayEquipmentLooses = Utilities.findByDate(dto: currentDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
 
-        self.previousDayEquipmentLooses = Utilities.findByDate(dto: previousDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
+        if (indexPath.row != 0) {
+            self.previousDayPersonnelLooses = DataRepositorySingleton.shared.personnelData[indexPath.row-1]
+            
+            self.previousDayEquipmentLooses = Utilities.findByDate(dto: previousDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
         }
         self.performSegue(withIdentifier: Consts.segueForDetailedView, sender: self)
 
