@@ -27,6 +27,8 @@ class DateListTableViewController: UITableViewController {
     override func viewDidLoad() {
 
         DataRepositorySingleton.shared.writeDataToArrays()
+        
+        DataRepositorySingleton.shared.currentDataInTable = DataRepositorySingleton.shared.personnelData
 
         createSearchController()
         
@@ -48,7 +50,7 @@ class DateListTableViewController: UITableViewController {
         self.searchController.searchBar.searchTextField.textColor = UIColor(named: "Accent3")
         self.searchController.searchBar.barTintColor = UIColor(named: "MilitaryColor")
         self.dateListTable.tableHeaderView = searchController.searchBar
-        
+        self.searchController.searchBar.tintColor = UIColor(named: "Accent3")
         
         self.searchController.definesPresentationContext = true
         
@@ -77,7 +79,7 @@ class DateListTableViewController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return DataRepositorySingleton.shared.personnelData.count
+        return DataRepositorySingleton.shared.currentDataInTable.count
 
     }
 
@@ -85,7 +87,7 @@ class DateListTableViewController: UITableViewController {
 
     let cell = tableView.dequeueReusableCell(withIdentifier: Consts.cellReuseId, for: indexPath) as! DateTableViewCell
 
-        cell.config(from: DataRepositorySingleton.shared.personnelData[indexPath.row])
+        cell.config(from: DataRepositorySingleton.shared.currentDataInTable[indexPath.row])
 
          return cell
    }
@@ -93,12 +95,12 @@ class DateListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 
-        self.currentDayPersonnelLooses = DataRepositorySingleton.shared.personnelData[indexPath.row]
+        self.currentDayPersonnelLooses = DataRepositorySingleton.shared.currentDataInTable[indexPath.row]
         
         self.currentDayEquipmentLooses = Utilities.findByDate(dto: currentDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
 
         if (indexPath.row != 0) {
-            self.previousDayPersonnelLooses = DataRepositorySingleton.shared.personnelData[indexPath.row-1]
+            self.previousDayPersonnelLooses = DataRepositorySingleton.shared.currentDataInTable[indexPath.row-1]
             
             self.previousDayEquipmentLooses = Utilities.findByDate(dto: previousDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
         }
@@ -115,11 +117,14 @@ extension DateListTableViewController: UISearchResultsUpdating {
             return
         }
 
-        DataRepositorySingleton.shared.personnelData = DataRepositorySingleton.shared.personnelData.filter({$0.date.contains(searchText.lowercased())})
+        let filteredPosts = DataRepositorySingleton.shared.personnelData.filter({$0.date.contains(searchText.lowercased()) || String($0.day).contains(searchText.lowercased())})
 
+        DataRepositorySingleton.shared.currentDataInTable = searchText != "" ? filteredPosts : DataRepositorySingleton.shared.personnelData
+        
+        
         self.dateListTable.reloadData()
 
-        if !DataRepositorySingleton.shared.personnelData.isEmpty { self.dateListTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .none, animated: true) }
+
 
     }
 

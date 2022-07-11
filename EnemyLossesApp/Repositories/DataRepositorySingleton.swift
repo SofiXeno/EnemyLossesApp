@@ -15,8 +15,10 @@ class DataRepositorySingleton {
 
     }
 
-    var equipmentData: [EquipmentLossesDto] = []
-    var personnelData: [PersonnelLossesDto] = []
+    var equipmentData : [EquipmentLossesDto] = []
+    var personnelData : [PersonnelLossesDto] = []
+    
+    var currentDataInTable : [PersonnelLossesDto] = []
 
     var mainMergedData: [MergedLosses] = []
 
@@ -24,11 +26,7 @@ class DataRepositorySingleton {
 
     private init() {}
 
-    //    let pathForEquipment = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(DataRepositorySingleton.FileNames.EquipmentData.rawValue)
-    //
-    //    let pathForPersonnel = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(DataRepositorySingleton.FileNames.PersonnelData.rawValue)
-    //
-    //
+  
     func readFromFile<T: Decodable>(nameOfFile: String, arrayToWriteTo: inout [T]) {
 
         do {
@@ -37,12 +35,8 @@ class DataRepositorySingleton {
 
             if let path = Bundle.main.url(forResource: nameOfFile, withExtension: "json") {
 
-                // let data = try Foundation.Data(contentsOf: path2)
-
-                // let str = String(decoding: try Foundation.Data(contentsOf: path2), as: UTF8.self)
+        
                 let data = Data(String(decoding: try Foundation.Data(contentsOf: path), as: UTF8.self).replacingOccurrences(of: "NaN", with: "0").utf8)
-
-                // print("strrrrr     ", String(decoding: data, as: UTF8.self))
 
                 arrayToWriteTo = try JSONDecoder().decode([T].self, from: data)
 
@@ -55,7 +49,6 @@ class DataRepositorySingleton {
 
         }
 
-        // return arrayToWriteTo
 
     }
 
