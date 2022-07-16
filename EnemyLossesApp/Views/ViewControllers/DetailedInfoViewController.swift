@@ -90,7 +90,6 @@ class DetailedInfoViewController: UIViewController {
 
         super.viewDidLoad()
 
-
     }
 
 }

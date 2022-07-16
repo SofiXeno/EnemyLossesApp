@@ -25,52 +25,44 @@ class DateListTableViewController: UITableViewController {
     override func viewDidLoad() {
 
         DataRepositorySingleton.shared.writeDataToArrays()
-        
+
         DataRepositorySingleton.shared.currentDataInTable = DataRepositorySingleton.shared.personnelData
 
         createSearchController()
-        
+
         super.viewDidLoad()
 
         self.dateListTable.delegate = self
         self.dateListTable.dataSource = self
 
     }
-    
-    
-    func createSearchController(){
-        
-        
+
+    func createSearchController() {
+
         self.searchController = UISearchController(searchResultsController: nil)
-        
+
         self.searchController.searchResultsUpdater = self
         self.searchController.searchBar.sizeToFit()
         self.searchController.searchBar.searchTextField.textColor = UIColor(named: "Accent3")
         self.searchController.searchBar.barTintColor = UIColor(named: "MilitaryColor")
         self.dateListTable.tableHeaderView = searchController.searchBar
         self.searchController.searchBar.tintColor = UIColor(named: "Accent3")
-        
+
         self.searchController.definesPresentationContext = true
-        
+
     }
-    
-    
 
     // MARK: Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! DetailedInfoViewController
-        
-        if (self.currentDayPersonnelLooses.day == 2){
+
+        if self.currentDayPersonnelLooses.day == 2 {
             destinationVC.losses = MergedLosses(currentPersonnelDto: self.currentDayPersonnelLooses, currentEquipmentDto: self.currentDayEquipmentLooses)
-            
-        }
-        
-        else{
+
+        } else {
         destinationVC.losses = MergedLosses(currentPersonnelDto: self.currentDayPersonnelLooses, currentEquipmentDto: self.currentDayEquipmentLooses, previousPersonnelDto: self.previousDayPersonnelLooses, previousEquipmentDto: self.previousDayEquipmentLooses)
         }
-        
 
-        print("selected data   \(self.currentDayEquipmentLooses)")
 
     }
 
@@ -92,14 +84,13 @@ class DateListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-
         self.currentDayPersonnelLooses = DataRepositorySingleton.shared.currentDataInTable[indexPath.row]
-        
+
         self.currentDayEquipmentLooses = Utilities.findByDate(dto: currentDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
 
-        if (indexPath.row != 0) {
+        if indexPath.row != 0 {
             self.previousDayPersonnelLooses = DataRepositorySingleton.shared.currentDataInTable[indexPath.row-1]
-            
+
             self.previousDayEquipmentLooses = Utilities.findByDate(dto: previousDayPersonnelLooses, array: DataRepositorySingleton.shared.equipmentData)
         }
         self.performSegue(withIdentifier: Consts.segueForDetailedView, sender: self)
@@ -118,11 +109,8 @@ extension DateListTableViewController: UISearchResultsUpdating {
         let filteredPosts = DataRepositorySingleton.shared.personnelData.filter({$0.date.contains(searchText.lowercased()) || String($0.day).contains(searchText.lowercased())})
 
         DataRepositorySingleton.shared.currentDataInTable = searchText != "" ? filteredPosts : DataRepositorySingleton.shared.personnelData
-        
-        
+
         self.dateListTable.reloadData()
-
-
 
     }
 

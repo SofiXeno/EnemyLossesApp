@@ -16,10 +16,10 @@ class DataRepositorySingleton {
 
     }
 
-    var equipmentData : [EquipmentLossesDto] = []
-    var personnelData : [PersonnelLossesDto] = []
-    
-    var currentDataInTable : [PersonnelLossesDto] = []
+    var equipmentData: [EquipmentLossesDto] = []
+    var personnelData: [PersonnelLossesDto] = []
+
+    var currentDataInTable: [PersonnelLossesDto] = []
 
     var mainMergedData: [MergedLosses] = []
 
@@ -27,18 +27,15 @@ class DataRepositorySingleton {
 
     private init() {}
 
-  
     func readFromFile<T: Decodable>(nameOfFile: String, arrayToWriteTo: inout [T]) {
 
         do {
 
             if let path = Bundle.main.url(forResource: nameOfFile, withExtension: "json") {
 
-        
                 let data = Data(String(decoding: try Foundation.Data(contentsOf: path), as: UTF8.self).replacingOccurrences(of: "NaN", with: "0").utf8)
 
                 arrayToWriteTo = try JSONDecoder().decode([T].self, from: data)
-
 
             }
 
@@ -46,7 +43,6 @@ class DataRepositorySingleton {
             print("Failed to read JSON data:", String(describing: error))
 
         }
-
 
     }
 
