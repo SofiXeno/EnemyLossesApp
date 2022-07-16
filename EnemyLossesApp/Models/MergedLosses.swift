@@ -3,7 +3,9 @@
 //  EnemyLossesApp
 //
 //  Created by Софія Ксенофонтова  on 04.07.2022.
-//
+
+// Class for joinned Equipment and Personnel looses representation for more comfoprtable usage
+
 
 import Foundation
 
@@ -34,7 +36,7 @@ class MergedLosses: Codable {
     let cruiseMissiles: String
 
     
-    // For 2 day
+    // For 2 day of war
     init(currentPersonnelDto: PersonnelLossesDto,
          currentEquipmentDto: EquipmentLossesDto){
         
@@ -67,7 +69,7 @@ class MergedLosses: Codable {
     
     
     
-    // For 3> day
+    // For 3> day of war (quantity representation includes current day + difference between previous and current days in braces )
     init(currentPersonnelDto: PersonnelLossesDto,
          currentEquipmentDto: EquipmentLossesDto, previousPersonnelDto: PersonnelLossesDto,
          previousEquipmentDto: EquipmentLossesDto) {

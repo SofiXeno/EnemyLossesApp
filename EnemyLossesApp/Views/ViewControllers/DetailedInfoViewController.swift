@@ -3,7 +3,8 @@
 //  EnemyLossesApp
 //
 //  Created by Софія Ксенофонтова  on 06.07.2022.
-//
+
+// Class for cell detailed view on the different ViewController
 
 import UIKit
 
@@ -19,12 +20,10 @@ class DetailedInfoViewController: UIViewController {
     @IBOutlet private weak var equipmentStack: UIStackView!
 
     // MARK: - Labels to update data in Personnel Stack
-
     @IBOutlet private weak var personnelLabel: UILabel!
     @IBOutlet private weak var powLabel: UILabel!
 
     // MARK: - Labels to update data in Equipment Stack
-
     @IBOutlet private weak var aircraftLabel: UILabel!
     @IBOutlet private weak var helicopterLabel: UILabel!
     @IBOutlet private weak var tankLabel: UILabel!
@@ -36,16 +35,12 @@ class DetailedInfoViewController: UIViewController {
     @IBOutlet private weak var droneLabel: UILabel!
     @IBOutlet private weak var navalShipLabel: UILabel!
     @IBOutlet private weak var aawLabel: UILabel!
-
     @IBOutlet private weak var specialEquipmentLabel: UILabel!
-
     @IBOutlet private weak var srbmSystemLabel: UILabel!
     @IBOutlet private weak var vehiclesAndFuelTanksLabel: UILabel!
-
     @IBOutlet private weak var cruiseMissilesLabel: UILabel!
 
     // MARK: - Actions
-
     @IBAction func showPersonnelLosses(_ sender: Any) {
         self.personnelButton.backgroundColor = UIColor(named: "PIXEL")
         self.personnelStack.isHidden = false
@@ -61,7 +56,6 @@ class DetailedInfoViewController: UIViewController {
     }
 
     // MARK: - Properties
-
     var losses: MergedLosses?
 
     // MARK: - Lifecycle
@@ -96,7 +90,7 @@ class DetailedInfoViewController: UIViewController {
 
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
 
 }

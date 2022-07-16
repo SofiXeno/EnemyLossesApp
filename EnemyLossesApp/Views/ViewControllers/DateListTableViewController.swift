@@ -3,7 +3,8 @@
 //  EnemyLossesApp
 //
 //  Created by Софія Ксенофонтова  on 04.07.2022.
-//
+
+// Class for table representation of days war
 
 import UIKit
 
@@ -13,13 +14,10 @@ class DateListTableViewController: UITableViewController {
     @IBOutlet private weak var dateListTable: UITableView!
 
     // MARK: Properties
-    
     var searchController: UISearchController!
     var selectedIndex = IndexPath(row: -1, section: 0)
-
     private var previousDayEquipmentLooses = EquipmentLossesDto()
     private var previousDayPersonnelLooses = PersonnelLossesDto()
-
     private var currentDayEquipmentLooses = EquipmentLossesDto()
     private var currentDayPersonnelLooses = PersonnelLossesDto()
 

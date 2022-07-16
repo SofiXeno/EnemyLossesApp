@@ -10,9 +10,7 @@ import UIKit
 class DateTableViewCell: UITableViewCell {
 
     // MARK: - IBOutlets
-
     @IBOutlet private weak var dayNumb: UILabel!
-
     @IBOutlet private weak var date: UILabel!
 
     // MARK: - Lifecycle

@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		896343F42871F3F400ACB482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896343F32871F3F400ACB482 /* AppDelegate.swift */; };
 		896343F62871F3F400ACB482 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896343F52871F3F400ACB482 /* SceneDelegate.swift */; };
-		896343F82871F3F400ACB482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896343F72871F3F400ACB482 /* ViewController.swift */; };
 		896343FB2871F3F400ACB482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343F92871F3F400ACB482 /* Main.storyboard */; };
 		896343FD2871F3F700ACB482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896343FC2871F3F700ACB482 /* Assets.xcassets */; };
 		896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896343FE2871F3F700ACB482 /* LaunchScreen.storyboard */; };
 		89D9E6992871FEDE001884A4 /* EquipmentLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */; };
 		89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */; };
 		89D9E69D2873142C001884A4 /* MergedLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E69C2873142C001884A4 /* MergedLosses.swift */; };
-		89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A1287314C5001884A4 /* FileOperationsController.swift */; };
 		89D9E6A42873150B001884A4 /* DataRepositorySingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A32873150B001884A4 /* DataRepositorySingleton.swift */; };
 		89D9E6A8287341AF001884A4 /* DateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6A7287341AF001884A4 /* DateListTableViewController.swift */; };
 		89D9E6B02875C1A0001884A4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6AF2875C1A0001884A4 /* Utilities.swift */; };
@@ -25,7 +23,9 @@
 		89D9E6B72879960C001884A4 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9E6B62879960C001884A4 /* Consts.swift */; };
 		89D9E6BD2879F40B001884A4 /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6BB2879F40B001884A4 /* russia_losses_personnel.json */; };
 		89D9E6BE2879F40B001884A4 /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6BC2879F40B001884A4 /* russia_losses_equipment.json */; };
-		89D9E6C2287A2360001884A4 /* Logo-launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6C1287A235F001884A4 /* Logo-launch@3x.png */; };
+		89D9E6C92883147B001884A4 /* Logo-launch@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6C62883147A001884A4 /* Logo-launch@1x.png */; };
+		89D9E6CA2883147B001884A4 /* Logo-launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6C72883147A001884A4 /* Logo-launch@2x.png */; };
+		89D9E6CB2883147B001884A4 /* Logo-launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9E6C82883147A001884A4 /* Logo-launch@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -46,7 +46,6 @@
 		896343F02871F3F400ACB482 /* EnemyLossesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnemyLossesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896343F32871F3F400ACB482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896343F52871F3F400ACB482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		896343F72871F3F400ACB482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		896343FA2871F3F400ACB482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		896343FC2871F3F700ACB482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896343FF2871F3F700ACB482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		89D9E6982871FEDE001884A4 /* EquipmentLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLossesDto.swift; sourceTree = "<group>"; };
 		89D9E69A2871FEF6001884A4 /* PersonnelLossesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLossesDto.swift; sourceTree = "<group>"; };
 		89D9E69C2873142C001884A4 /* MergedLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedLosses.swift; sourceTree = "<group>"; };
-		89D9E6A1287314C5001884A4 /* FileOperationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationsController.swift; sourceTree = "<group>"; };
 		89D9E6A32873150B001884A4 /* DataRepositorySingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositorySingleton.swift; sourceTree = "<group>"; };
 		89D9E6A7287341AF001884A4 /* DateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListTableViewController.swift; sourceTree = "<group>"; };
 		89D9E6AF2875C1A0001884A4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -63,7 +61,9 @@
 		89D9E6B62879960C001884A4 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		89D9E6BB2879F40B001884A4 /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_personnel.json; path = ../../../russia_losses_personnel.json; sourceTree = "<group>"; };
 		89D9E6BC2879F40B001884A4 /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = russia_losses_equipment.json; path = ../../../russia_losses_equipment.json; sourceTree = "<group>"; };
-		89D9E6C1287A235F001884A4 /* Logo-launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo-launch@3x.png"; path = "../../../../Logo-launch@3x.png"; sourceTree = "<group>"; };
+		89D9E6C62883147A001884A4 /* Logo-launch@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-launch@1x.png"; sourceTree = "<group>"; };
+		89D9E6C72883147A001884A4 /* Logo-launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-launch@2x.png"; sourceTree = "<group>"; };
+		89D9E6C82883147A001884A4 /* Logo-launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-launch@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,6 @@
 				89D9E69E28731487001884A4 /* Utitlities */,
 				8963440B2871F45800ACB482 /* App */,
 				896344092871F42D00ACB482 /* Models */,
-				896344082871F41A00ACB482 /* Controllers */,
 				896344072871F40B00ACB482 /* Views */,
 				896343FC2871F3F700ACB482 /* Assets.xcassets */,
 				896344012871F3F700ACB482 /* Info.plist */,
@@ -117,15 +116,6 @@
 				89D9E6A52873411B001884A4 /* Storyboards */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		896344082871F41A00ACB482 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				89D9E6A1287314C5001884A4 /* FileOperationsController.swift */,
-				896343F72871F3F400ACB482 /* ViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		896344092871F42D00ACB482 /* Models */ = {
@@ -211,7 +201,9 @@
 		89D9E6C0287A234D001884A4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				89D9E6C1287A235F001884A4 /* Logo-launch@3x.png */,
+				89D9E6C62883147A001884A4 /* Logo-launch@1x.png */,
+				89D9E6C72883147A001884A4 /* Logo-launch@2x.png */,
+				89D9E6C82883147A001884A4 /* Logo-launch@3x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -276,12 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D9E6CA2883147B001884A4 /* Logo-launch@2x.png in Resources */,
 				89D9E6BD2879F40B001884A4 /* russia_losses_personnel.json in Resources */,
 				89D9E6BE2879F40B001884A4 /* russia_losses_equipment.json in Resources */,
 				896344002871F3F700ACB482 /* LaunchScreen.storyboard in Resources */,
 				896343FD2871F3F700ACB482 /* Assets.xcassets in Resources */,
+				89D9E6CB2883147B001884A4 /* Logo-launch@3x.png in Resources */,
+				89D9E6C92883147B001884A4 /* Logo-launch@1x.png in Resources */,
 				896343FB2871F3F400ACB482 /* Main.storyboard in Resources */,
-				89D9E6C2287A2360001884A4 /* Logo-launch@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D9E6A2287314C5001884A4 /* FileOperationsController.swift in Sources */,
 				89D9E6A42873150B001884A4 /* DataRepositorySingleton.swift in Sources */,
 				89D9E69B2871FEF6001884A4 /* PersonnelLossesDto.swift in Sources */,
 				89D9E6B72879960C001884A4 /* Consts.swift in Sources */,
@@ -321,7 +314,6 @@
 				89D9E6B02875C1A0001884A4 /* Utilities.swift in Sources */,
 				89D9E6B52875F591001884A4 /* DetailedInfoViewController.swift in Sources */,
 				89D9E6A8287341AF001884A4 /* DateListTableViewController.swift in Sources */,
-				896343F82871F3F400ACB482 /* ViewController.swift in Sources */,
 				89D9E6B32875D826001884A4 /* DateTableViewCell.swift in Sources */,
 				896343F42871F3F400ACB482 /* AppDelegate.swift in Sources */,
 				896343F62871F3F400ACB482 /* SceneDelegate.swift in Sources */,

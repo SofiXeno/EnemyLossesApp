@@ -3,7 +3,8 @@
 //  EnemyLossesApp
 //
 //  Created by Софія Ксенофонтова  on 04.07.2022.
-//
+
+//  Class for json data processing
 
 import Foundation
 
@@ -31,8 +32,6 @@ class DataRepositorySingleton {
 
         do {
 
-            print("READ \(nameOfFile)")
-
             if let path = Bundle.main.url(forResource: nameOfFile, withExtension: "json") {
 
         
@@ -40,7 +39,6 @@ class DataRepositorySingleton {
 
                 arrayToWriteTo = try JSONDecoder().decode([T].self, from: data)
 
-                print("arrayToWriteTo   ", arrayToWriteTo)
 
             }
 
@@ -55,11 +53,8 @@ class DataRepositorySingleton {
     func writeDataToArrays() {
 
         self.readFromFile(nameOfFile: FileNames.equipmentData.rawValue, arrayToWriteTo: &self.equipmentData)
-
         self.readFromFile(nameOfFile: FileNames.personnelData.rawValue, arrayToWriteTo: &self.personnelData)
 
-//        print("EQUIPMENT    ", self.equipmentData)
-//        print("PERSONNEL    ", self.personnelData)
     }
 
 }

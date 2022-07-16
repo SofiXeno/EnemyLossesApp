@@ -3,7 +3,7 @@
 //  EnemyLossesApp
 //
 //  Created by Софія Ксенофонтова  on 09.07.2022.
-//
+//  Class used for whole program Consts
 
 import Foundation
 

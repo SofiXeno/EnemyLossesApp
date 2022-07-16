@@ -10,6 +10,8 @@ import UIKit
 
 struct Utilities {
 
+    
+    //Function which prints current day looses + deference of previous and current day in braces, if this difference is less than 0 prints only current day looses
     static func printLoosesPerDay(current: Int, currAndPrevdifference: Int) -> String {
         
         switch currAndPrevdifference {
@@ -23,6 +25,8 @@ struct Utilities {
         
        }
 
+    
+    // From EquipmentLossesDto array find the dto with the save date as in PersonnelLossesDto
     static func findByDate(dto: PersonnelLossesDto, array: [EquipmentLossesDto]) -> EquipmentLossesDto {
 
     var temp = EquipmentLossesDto()
@@ -34,20 +38,7 @@ struct Utilities {
         return temp
     }
 
-    
-    
-    
-    
-//    static func mergeLooses(equipment: EquipmentLossesDto, personnel: PersonnelLossesDto) -> MergedLosses? {
-//        
-//        if (equipment.day == personnel.day) {
-//            
-//           return MergedLosses(personnelDto: personnel, equipmentDto: equipment)
-//            
-//        }
-//        
-//        return nil
-//    }
+
 
 }
 
